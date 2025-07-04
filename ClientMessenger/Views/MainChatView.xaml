@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="ClientMessenger.Views.MainChatView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <!-- 채팅 목록 -->
+            <ColumnDefinition Width="*"/>
+            <!-- 채팅 뷰 -->
+        </Grid.ColumnDefinitions>
+
+        <!-- ▶ 채팅 목록 영역 -->
+        <Grid Background="#F9F9F9" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- 제목 -->
+                <RowDefinition Height="*"/>
+                <!-- 리스트 -->
+            </Grid.RowDefinitions>
+
+            <!-- 제목 -->
+            <TextBlock Text="대화목록" FontSize="16" FontWeight="Bold"
+                       Margin="15 10 0 5" />
+
+            <!-- 채팅방 목록 -->
+            <ListView Grid.Row="1"
+                      Margin="5"
+                      ItemsSource="{Binding ChatRoomList}"
+                      SelectedItem="{Binding SelectedChatRoom}"
+                      BorderThickness="0"
+                      Background="#F9F9F9">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="10 5">
+                            <TextBlock Text="{Binding RoomName}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding LastMessage}" 
+                                       FontSize="12" 
+                                       Foreground="Gray"
+                                       TextTrimming="CharacterEllipsis" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- + 버튼 -->
+            <Button Content="＋"
+                    Width="45" Height="45"
+                    FontSize="24"
+                    FontWeight="Bold"
+                    Background="#00BCD4"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 15 15 15"
+                    Command="{Binding OpenUserListCommand}" />
+        </Grid>
+
+        <!-- ▶ 채팅방 표시 영역 -->
+        <ContentControl Grid.Column="1"
+                        Content="{Binding ChattingRoomView}" />
+    </Grid>
+</UserControl>
