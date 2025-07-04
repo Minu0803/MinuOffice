@@ -64,6 +64,8 @@
     <Compile Include="Models\RoomModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Network\ClientSession.cs" />
+    <Compile Include="Network\PacketHeader.cs" />
+    <Compile Include="Network\PacketUtils.cs" />
     <Compile Include="Network\SocketServerManager.cs" />
     <Compile Include="Services\FileDataService.cs" />
     <Compile Include="Services\RoomManager.cs" />
