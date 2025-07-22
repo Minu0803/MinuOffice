@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ClientMessenger.Views.ImagePreviewWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ClientMessenger.Views"
+             Width="700" Height="500"
+             Background="Black">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 이미지 제목 -->
+        <TextBlock Text="{Binding ImageTitle}"
+                   Foreground="White"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Margin="0 0 0 10"/>
+
+        <!-- 이미지 뷰어 -->
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="White" Background="White">
+            <Image Source="{Binding ImageSource}" Stretch="Uniform" Margin="5"/>
+        </Border>
+
+        <!-- 저장 버튼 -->
+        <Button Grid.Row="2"
+                Content="이미지 저장"
+                Width="100"
+                Height="35"
+                Margin="0 10 0 0"
+                HorizontalAlignment="Right"
+                Command="{Binding SaveImageCommand}" />
+    </Grid>
+</UserControl>
