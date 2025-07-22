@@ -9,6 +9,8 @@
   사용자 간 실시간 소통을 위한 TCP 기반 클라이언트-서버 구조로 구현되었습니다.
 </p>
 
----
+<p align="center">
+  👉 <a href="https://receptive-muscari-3cf.notion.site/Minu-Office-2386538f55f6806e90accfa5b5aeee07" target="_blank">📄 프로젝트 상세 문서(Notion) 보기</a>
+</p>
 
-‼️ 파일, 사진, 텍스트 전송 가능해야 함 + DB 커넥션‼️
+---
