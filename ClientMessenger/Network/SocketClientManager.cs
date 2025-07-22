@@ -36,7 +36,7 @@ namespace ClientMessenger.Network
             try
             {
                 _clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                _clientSocket.Connect("192.168.0.39", Constants.ServerPort);
+                _clientSocket.Connect("127.0.0.1", Constants.ServerPort);
                 _isConnected = true;
 
                 CurrentSession = new MySession(_clientSocket);
