@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  👉 <a href="https://receptive-muscari-3cf.notion.site/Minu-Office-2386538f55f6806e90accfa5b5aeee07" target="_blank">📄 프로젝트 상세 문서(Notion) 보기</a>
+  👉 <a href="https://receptive-muscari-3cf.notion.site/Minu-Office-2386538f55f6806e90accfa5b5aeee07" target="_blank">📄Notion 보기</a>
 </p>
 
 ---
