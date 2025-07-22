@@ -5,14 +5,16 @@
 <h1 align="center">💼 Minu Office - 사내 메신저 프로젝트</h1>
 
 <p align="center">
-  개인 프로젝트 입니다!
   사내 메신저처럼 텍스트, 이미지, 파일 전송이 가능한 채팅 애플리케이션입니다. <br/>
   사용자 간 실시간 소통을 위한 TCP 기반 클라이언트-서버 구조로 구현되었습니다.
-  C# WPF MVVM 패턴을 이용하여 만들었고, 개인 공부 및 학습용도로 제작하였습니다.
 </p>
 
 <p align="center">
-  👉 <a href="https://receptive-muscari-3cf.notion.site/Minu-Office-2386538f55f6806e90accfa5b5aeee07" target="_blank">📄Notion 보기</a>
+  📌 <strong>프로젝트 문서 바로가기</strong>
 </p>
 
----
+<p align="center">
+  🔗 <a href="https://receptive-muscari-3cf.notion.site/Minu-Office-2386538f55f6806e90accfa5b5aeee07">Notion 문서</a> |
+  🎨 <a href="https://www.figma.com/design/xhukhmpTcZZG354C352Rxd/Minu-Office?node-id=5-74&p=f">Figma 디자인</a> |
+  🗂️ <a href="https://www.erdcloud.com/d/xogDqkn5o3JSqusCs">ERD Cloud</a>
+</p>
